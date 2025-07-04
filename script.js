@@ -4,7 +4,7 @@ function hesapla(islem) {
       let sonuc;
 
       if (isNaN(sayi1) || isNaN(sayi2)) {
-        sonuc = "Lütfen her iki sayıyı da girin!";
+        sonuc = "Please enter both numbers!";
       } else {
         switch (islem) {
           case '+':
@@ -18,7 +18,7 @@ function hesapla(islem) {
             break;
           case '/':
             if (sayi2 === 0) {
-              sonuc = "Sıfıra bölünemez!";
+              sonuc = "Cannot be divided by zero!";
             } else {
               sonuc = sayi1 / sayi2;
             }
@@ -26,5 +26,5 @@ function hesapla(islem) {
         }
       }
 
-      document.getElementById("sonuc").innerText = "Sonuç: " + sonuc;
+      document.getElementById("sonuc").innerText =  sonuc;
     }
