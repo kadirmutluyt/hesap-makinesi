@@ -1,33 +1,90 @@
-body {
-    font-family:Arial; 
-    text-align: center; 
-    margin-top: 100px;
-    background-color: black;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-input {
-      padding: 10px;
-      margin: 5px;
-      width: 100px;
-      background-color: beige;
-    }
-    button {
-      padding: 10px 20px;
-      margin: 20;
-      background-color: beige;
-    }
-    #sonuc {
-      font-weight: bold;
-      margin-top: 20px;
-    }
+h3 {
+  font-size: 20px;
+}
 
-.hesapmakinesi {
-    
-    background-color: rgb(0, 238, 255);
-    padding: 30px;
-    margin: auto;
-    width: 250px;
-    border-radius: 15px;
-    box-shadow: 0 0 1000px rgba(0,0,0,0.2);
-    margin: auto;
-    }
+.small h3{
+  font-size: 7px;
+}
+
+.container {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-template-rows: 200px 400px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.container .box1 {
+  display: flex;
+  background-color: #262626;
+  align-items: center;
+  justify-content: center;
+}
+
+#screen {
+  width: 350px;
+  height: 80px;
+  background-color: rgba(67, 212, 188, 0.752);
+  outline: none;
+}
+
+
+.container .box2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  background-color: #333333;
+  justify-items: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+
+/* Buttons */
+
+.plus {
+  grid-column: 5;
+  grid-row: 5 / span 2;
+}
+
+.plus-btn {
+  height: 90px !important;
+}
+
+.small-btn {
+  height: 30px !important;
+}
+
+.btn {
+  width: 50px;
+  height: 40px;
+  border-radius: 15%;
+  color: #fff;
+  border-color: #343434;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.btn-gray {
+  background-color: rgb(92, 91, 91);
+}
+
+.btn-orange {
+  background-color: #ffa600c0;
+}
+
+.btn-black {
+  background-color: #222222c0;
+}
+
